@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.time-selectors,
+.date-selectors {
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.todo-list .todo-text {
+  font-weight: bold;
+}
+
+.todo-list .todo-description {
+  color: #666;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: red;
+}
+
+.expired {
+  text-decoration: line-through;
+  color: red;
+}
+
+.todo-list button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-list button:nth-child(1) {
+  background-color: #28a745; 
+}
+
+
+.todo-list button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+.todo-list button:nth-child(2):hover {
+  background-color: #c82333;
+}
